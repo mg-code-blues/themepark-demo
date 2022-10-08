@@ -39,6 +39,11 @@ public class ThemeParkRideController {
         return List.of(themeParkRide1, themeParkRide2, themeParkRide3);
     }
 
+    /**
+     * Adding comments for test
+     * @param tpr
+     * @return
+     */
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ThemeParkRide saveThemeRides(@RequestBody ThemeParkRide tpr) {
         System.out.println("Ride saved");
