@@ -45,6 +45,11 @@ public class ThemeParkRideController {
         return tpr;
     }
 
+    /**
+     * Adding comments for test
+     * @param id
+     * @return
+     */
     @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ThemeParkRide getThemeParkRide(@PathVariable String id) {
         return ThemeParkRide.builder()
